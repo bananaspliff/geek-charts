@@ -1,0 +1,23 @@
+apiVersion: v1
+entries:
+  myvolume:
+  - apiVersion: v2
+    appVersion: "2.0"
+    created: 2018-04-23T19:03:09.367160411+02:00
+    description: PVC ReadWriteMany for current Namespace
+    digest: 8d9fb449f04f0f631b8522b58189f8e07a33c73c8bf092720bb3ba4332cc8d49
+    name: myvolume
+    urls:
+    - https://bananaspliff.github.io/helm-charts/myvolume-0.2.0.tgz
+    version: 0.2.0
+  sonarr:
+  - apiVersion: v4
+    appVersion: "4.0"
+    created: 2018-04-23T19:03:09.367633708+02:00
+    description: A Sonar HELM chart for Kubernetes
+    digest: 3c4b99a36d26522bad2c40a8218b977d1695beca88410474ae86a3cbd50ba455
+    name: sonarr
+    urls:
+    - https://bananaspliff.github.io/helm-charts/sonarr-0.4.0.tgz
+    version: 0.4.0
+generated: 2018-04-23T19:03:09.366680564+02:00
