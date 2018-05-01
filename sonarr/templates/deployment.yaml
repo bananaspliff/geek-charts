@@ -47,8 +47,8 @@ spec:
               mountPath: "/downloads"
               subPath: "downloads/{{ default "sonarr" .Values.subDomain }}"
             - name: myvolume
-              mountPath: "/movies"
-              subPath: "medias/movies"
+              mountPath: "/tv"
+              subPath: "medias/series"
           resources:
 {{ toYaml .Values.resources | indent 12 }}
     {{- with .Values.nodeSelector }}

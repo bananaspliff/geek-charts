@@ -1,6 +1,6 @@
-apiVersion: v6
-appVersion: "6.0"
+apiVersion: v7
+appVersion: "7.0"
 description: A Sonarr HELM chart for Kubernetes
 name: sonarr
-version: 0.6.0
+version: 0.7.0
 icon: https://bananaspliff.github.io/helm-charts/sonarr/logo/sonarr.png
