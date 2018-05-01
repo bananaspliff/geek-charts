@@ -3,17 +3,38 @@ entries:
   myvolume:
   - apiVersion: v2
     appVersion: "2.0"
-    created: 2018-05-01T21:44:52.83247309+02:00
+    created: 2018-05-01T23:05:54.609595597+02:00
     description: PVC ReadWriteMany for current Namespace
     digest: 8d9fb449f04f0f631b8522b58189f8e07a33c73c8bf092720bb3ba4332cc8d49
     name: myvolume
     urls:
     - https://bananaspliff.github.io/helm-charts/myvolume-0.2.0.tgz
     version: 0.2.0
+  radarr:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2018-05-01T23:05:54.610316173+02:00
+    description: A Radarr HELM chart for Kubernetes
+    digest: b812af9772940983c5a092fa77f374826748bb986ec2a1eb5da78396a753c60b
+    icon: https://bananaspliff.github.io/helm-charts/radarr/logo/radarr.png
+    name: radarr
+    urls:
+    - https://bananaspliff.github.io/helm-charts/radarr-0.1.0.tgz
+    version: 0.1.0
   sonarr:
+  - apiVersion: v6
+    appVersion: "6.0"
+    created: 2018-05-01T23:05:54.61181157+02:00
+    description: A Sonarr HELM chart for Kubernetes
+    digest: fef3c9324f8d7e6f8dfe63127564822adb6329414f26c72cf46c9f0c196821b3
+    icon: https://bananaspliff.github.io/helm-charts/sonarr/logo/sonarr.png
+    name: sonarr
+    urls:
+    - https://bananaspliff.github.io/helm-charts/sonarr-0.6.0.tgz
+    version: 0.6.0
   - apiVersion: v5
     appVersion: "5.0"
-    created: 2018-05-01T21:44:52.833018181+02:00
+    created: 2018-05-01T23:05:54.611125806+02:00
     description: A Sonar HELM chart for Kubernetes
     digest: 0ca1025832665b51b0333bed77aa147ea8eee725e1c734aa276003c84681ace3
     name: sonarr
@@ -22,11 +43,11 @@ entries:
     version: 0.5.0
   - apiVersion: v4
     appVersion: "4.0"
-    created: 2018-05-01T21:44:52.832704125+02:00
+    created: 2018-05-01T23:05:54.610663821+02:00
     description: A Sonar HELM chart for Kubernetes
     digest: 3c4b99a36d26522bad2c40a8218b977d1695beca88410474ae86a3cbd50ba455
     name: sonarr
     urls:
-    - https://bananaspliff.github.io/helm-charts/sonarr-0.4.0.tgz
+    - sonarr-0.4.0.tgz
     version: 0.4.0
-generated: 2018-05-01T21:44:52.832154919+02:00
+generated: 2018-05-01T23:05:54.609214244+02:00
