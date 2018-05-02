@@ -1,8 +1,18 @@
 apiVersion: v1
 entries:
+  jackett:
+  - apiVersion: v1
+    created: 2018-05-02T22:42:21.658425339+02:00
+    description: A Jackett HELM chart for Kubernetes
+    digest: f085f223a58c0aa7670c248cde3b05da764fffdc987b8ce82942052cdbeb19bc
+    icon: https://bananaspliff.github.io/helm-charts/jackett/logo/jackett.png
+    name: jackett
+    urls:
+    - https://bananaspliff.github.io/helm-charts/jackett-0.1.0.tgz
+    version: 0.1.0
   myvolume:
   - apiVersion: v1
-    created: 2018-05-02T20:11:17.410059077+02:00
+    created: 2018-05-02T22:42:21.658597103+02:00
     description: PVC ReadWriteMany for current Namespace
     digest: bc3f42581091f475c91500642e614a46a61cf23ab28a5f4f844e423658d07bbb
     name: myvolume
@@ -11,7 +21,7 @@ entries:
     version: 0.1.0
   radarr:
   - apiVersion: v1
-    created: 2018-05-02T20:11:17.410603725+02:00
+    created: 2018-05-02T22:42:21.658953894+02:00
     description: A Radarr HELM chart for Kubernetes
     digest: 04fcd948076f4fc81b9784f689da407c2dd30c35369bfac41da9f3a066e6e6af
     icon: https://bananaspliff.github.io/helm-charts/radarr/logo/radarr.png
@@ -19,9 +29,19 @@ entries:
     urls:
     - https://bananaspliff.github.io/helm-charts/radarr-0.1.0.tgz
     version: 0.1.0
+  sftp:
+  - apiVersion: v1
+    created: 2018-05-02T22:42:21.659738566+02:00
+    description: A SFTP HELM chart for Kubernetes
+    digest: e89d3dbdfc51c02035869da16b8cfd79ab8fa15137f322af082e43f7fab73ee9
+    icon: https://bananaspliff.github.io/helm-charts/sftp/logo/sftp.png
+    name: sftp
+    urls:
+    - https://bananaspliff.github.io/helm-charts/sftp-0.1.0.tgz
+    version: 0.1.0
   sonarr:
   - apiVersion: v1
-    created: 2018-05-02T20:11:17.411084244+02:00
+    created: 2018-05-02T22:42:21.660057098+02:00
     description: A Sonarr HELM chart for Kubernetes
     digest: 0836b024949c686f225c9ab9ce1696232cca9055974bb2f30353773351675a39
     icon: https://bananaspliff.github.io/helm-charts/sonarr/logo/sonarr.png
@@ -29,4 +49,4 @@ entries:
     urls:
     - https://bananaspliff.github.io/helm-charts/sonarr-0.1.0.tgz
     version: 0.1.0
-generated: 2018-05-02T20:11:17.409688202+02:00
+generated: 2018-05-02T22:42:21.657466003+02:00
