@@ -31,7 +31,7 @@ spec:
             - name: ssh
               containerPort: 22
               protocol: TCP
-          args: ["{{default "default" .Release.Namespace}}:{{ .Values.password }}:1001"]
+          args: ["{{ .Values.image.args }}"]
           volumeMounts:
             - name: myvolume
               mountPath: "/home/{{default "default" .Release.Namespace}}"

@@ -2,12 +2,11 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-password: foo # login = namespace ; chroot = /home/namespace
-
 image:
   repository: atmoz/sftp
   tag: latest
   pullPolicy: IfNotPresent
+  args: "foo:foo:1001"
 
 service:
   type: NodePort
