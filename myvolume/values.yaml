@@ -5,3 +5,6 @@
 storageClass: bananaspliff-nfs
 
 storage: 512Gi
+
+# WARNING !!! removing the package causes the physical removal of the volume
+
