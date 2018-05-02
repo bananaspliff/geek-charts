@@ -42,7 +42,7 @@ spec:
           volumeMounts:
             - name: myvolume
               mountPath: "/config"
-              subPath: "configs/{{ default "sonarr" .Values.subDomain }}"
+              subPath: "configs/{{ template "sonarr.fullname" . }}"
             - name: myvolume
               mountPath: "/downloads"
               subPath: "downloads/{{ default "sonarr" .Values.subDomain }}"

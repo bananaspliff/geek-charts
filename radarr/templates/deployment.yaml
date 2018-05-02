@@ -42,7 +42,7 @@ spec:
           volumeMounts:
             - name: myvolume
               mountPath: "/config"
-              subPath: "configs/{{ default "radarr" .Values.subDomain }}"
+              subPath: "configs/{{ template "radarr.fullname" . }}"
             - name: myvolume
               mountPath: "/downloads"
               subPath: "downloads/{{ default "radarr" .Values.subDomain }}"

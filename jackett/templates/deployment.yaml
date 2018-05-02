@@ -42,7 +42,7 @@ spec:
           volumeMounts:
             - name: myvolume
               mountPath: "/config"
-              subPath: "configs/{{ default "jackett" .Values.subDomain }}"
+              subPath: "configs/{{ template "jackett.fullname" . }}"
             - name: myvolume
               mountPath: "/downloads"
               subPath: "downloads/{{ default "jackett" .Values.subDomain }}"
