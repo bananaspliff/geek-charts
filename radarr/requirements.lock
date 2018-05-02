@@ -1,6 +1,0 @@
-dependencies:
-- name: myvolume
-  repository: https://bananaspliff.github.io/helm-charts/
-  version: 0.2.0
-digest: sha256:0b921a5dd46f753dc75f861c3bf9a5e608ac248c30645b5b6ab41aa5139ffd27
-generated: 2018-05-01T21:43:07.460377283+02:00

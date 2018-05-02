@@ -1,4 +1,0 @@
-dependencies:
-- name: myvolume
-  version: 0.2.0
-  repository: "https://bananaspliff.github.io/helm-charts/"
