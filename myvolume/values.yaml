@@ -4,4 +4,4 @@
 
 storageClass: bananaspliff-nfs
 
-storage: 100Gi
+storage: 512Gi
