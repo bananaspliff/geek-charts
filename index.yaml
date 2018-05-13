@@ -1,39 +1,49 @@
 apiVersion: v1
 entries:
+  emby:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2018-05-13T16:51:57.462742151+02:00
+    description: Emby Server (Media Browser)
+    digest: 16f819dca68709fbcb1c437a687878b25c365c5df4051a1b96e4258ddf7fadf7
+    name: emby
+    urls:
+    - emby-0.1.0.tgz
+    version: 0.1.0
   jackett:
   - apiVersion: v1
-    created: 2018-05-02T22:42:21.658425339+02:00
-    description: A Jackett HELM chart for Kubernetes
-    digest: f085f223a58c0aa7670c248cde3b05da764fffdc987b8ce82942052cdbeb19bc
-    icon: https://bananaspliff.github.io/helm-charts/jackett/logo/jackett.png
+    appVersion: "1.0"
+    created: 2018-05-13T16:51:57.46298784+02:00
+    description: Jackett - shut:p
+    digest: 48a88160740aeba984ca98dae466f79247cb14f15df9afbd324562d5a6b17555
     name: jackett
     urls:
     - https://bananaspliff.github.io/helm-charts/jackett-0.1.0.tgz
     version: 0.1.0
   myvolume:
   - apiVersion: v1
-    created: 2018-05-02T22:42:21.658597103+02:00
+    created: 2018-05-13T16:51:57.463140991+02:00
     description: PVC ReadWriteMany for current Namespace
-    digest: bc3f42581091f475c91500642e614a46a61cf23ab28a5f4f844e423658d07bbb
+    digest: 5e1993894f675f4a600a57081fe233eabe4cf6694b8e5f00527a66843029e487
     name: myvolume
     urls:
     - https://bananaspliff.github.io/helm-charts/myvolume-0.1.0.tgz
     version: 0.1.0
   radarr:
   - apiVersion: v1
-    created: 2018-05-02T22:42:21.658953894+02:00
-    description: A Radarr HELM chart for Kubernetes
-    digest: 04fcd948076f4fc81b9784f689da407c2dd30c35369bfac41da9f3a066e6e6af
-    icon: https://bananaspliff.github.io/helm-charts/radarr/logo/radarr.png
+    appVersion: "1.0"
+    created: 2018-05-13T16:51:57.463355675+02:00
+    description: Radarr - Automatic downloader for movies :)
+    digest: adbe78fbb54ec19ee95f69b1038df1e5d9a6b501254753cdb71f216550ce5752
     name: radarr
     urls:
     - https://bananaspliff.github.io/helm-charts/radarr-0.1.0.tgz
     version: 0.1.0
   sftp:
   - apiVersion: v1
-    created: 2018-05-02T22:42:21.659738566+02:00
+    created: 2018-05-13T16:51:57.464159724+02:00
     description: A SFTP HELM chart for Kubernetes
-    digest: e89d3dbdfc51c02035869da16b8cfd79ab8fa15137f322af082e43f7fab73ee9
+    digest: f2e5af08e411c2db16509c940e0d6f45af548a1dd0d62a1bcf4831291673bc13
     icon: https://bananaspliff.github.io/helm-charts/sftp/logo/sftp.png
     name: sftp
     urls:
@@ -41,12 +51,12 @@ entries:
     version: 0.1.0
   sonarr:
   - apiVersion: v1
-    created: 2018-05-02T22:42:21.660057098+02:00
-    description: A Sonarr HELM chart for Kubernetes
-    digest: 0836b024949c686f225c9ab9ce1696232cca9055974bb2f30353773351675a39
-    icon: https://bananaspliff.github.io/helm-charts/sonarr/logo/sonarr.png
+    appVersion: "1.0"
+    created: 2018-05-13T16:51:57.464450583+02:00
+    description: Sonarr - Automatic downloader for movies :)
+    digest: ea82e9175d56a5d6878426ffc122e3bb588aa7b3d0ead8aa2f8fdd15877f40ff
     name: sonarr
     urls:
     - https://bananaspliff.github.io/helm-charts/sonarr-0.1.0.tgz
     version: 0.1.0
-generated: 2018-05-02T22:42:21.657466003+02:00
+generated: 2018-05-13T16:51:57.462388595+02:00

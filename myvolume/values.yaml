@@ -1,6 +1,3 @@
-# Default values for myvolume.
-# This is a YAML-formatted file.
-# Declare variables to be passed into your templates.
 
 storageClass: bananaspliff-nfs
 
