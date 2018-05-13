@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ template "emby.fullname" . }}
+  labels:
+    app: {{ template "emby.name" . }}
+    chart: {{ template "emby.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: 8096
+      protocol: TCP
+      name: http
+  selector:
+    app: {{ template "emby.name" . }}
+    release: {{ .Release.Name }}
