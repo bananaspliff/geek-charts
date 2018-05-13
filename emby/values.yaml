@@ -42,7 +42,10 @@ volumeMounts:
     mountPath: "/medias"
     subPath: "medias"
 
-resources: {}
+resources:
+  requests:
+    memory: 2048m
+    cpu: 4
 
 nodeSelector: {}
 

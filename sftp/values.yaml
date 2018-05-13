@@ -18,7 +18,10 @@ volumeMounts:
   - name: myvolume
     mountPath: "/home/foo"
 
-resources: {}
+resources:
+  requests:
+    memory: 256m
+    cpu: 0.5
 
 nodeSelector: {}
 

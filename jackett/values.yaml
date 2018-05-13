@@ -42,7 +42,10 @@ volumeMounts:
     mountPath: "/downloads"
     subPath: "downloads/jackett"
 
-resources: {}
+resources:
+  requests:
+    memory: 256m
+    cpu: 0.25
 
 nodeSelector: {}
 

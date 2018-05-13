@@ -45,7 +45,10 @@ volumeMounts:
     mountPath: "/tv"
     subPath: "medias/tv"
 
-resources: {}
+resources:
+  requests:
+    memory: 256m
+    cpu: 0.25
 
 nodeSelector: {}
 
