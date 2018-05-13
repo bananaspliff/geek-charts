@@ -6,6 +6,12 @@ image:
   tag: latest
   pullPolicy: IfNotPresent
 
+env:
+  - name: PUID
+    value: "1001"
+  - name: PGID
+    value: "100"
+
 service:
   type: ClusterIP
   port: 80

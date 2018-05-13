@@ -16,7 +16,7 @@ volumes:
 
 volumeMounts:
   - name: myvolume
-    mountPath: "/home/banane"
+    mountPath: "/home/foo"
 
 resources: {}
 
