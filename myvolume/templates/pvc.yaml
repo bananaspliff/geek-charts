@@ -1,7 +1,7 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: myvolume-{{default "default" .Release.Namespace}}
+  name: {{ .Values.volumeName }}
 spec:
   storageClassName: {{ .Values.storageClass }}
   accessModes:

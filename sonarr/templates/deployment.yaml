@@ -20,9 +20,7 @@ spec:
         release: {{ .Release.Name }}
     spec:
       volumes:
-      - name: myvolume
-        persistentVolumeClaim:
-          claimName: myvolume-{{default "default" .Release.Namespace}}
+{{ toYaml .Values.volumes | indent 6 }}
       containers:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
@@ -40,15 +38,7 @@ spec:
               path: /
               port: http
           volumeMounts:
-            - name: myvolume
-              mountPath: "/config"
-              subPath: "configs/{{ template "sonarr.fullname" . }}"
-            - name: myvolume
-              mountPath: "/downloads"
-              subPath: "downloads/{{ default "sonarr" .Values.subDomain }}"
-            - name: myvolume
-              mountPath: "/tv"
-              subPath: "medias/series"
+{{ toYaml .Values.volumeMounts | indent 12 }}
           resources:
 {{ toYaml .Values.resources | indent 12 }}
     {{- with .Values.nodeSelector }}

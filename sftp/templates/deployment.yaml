@@ -20,9 +20,7 @@ spec:
         release: {{ .Release.Name }}
     spec:
       volumes:
-      - name: myvolume
-        persistentVolumeClaim:
-          claimName: myvolume-{{default "default" .Release.Namespace}}
+{{ toYaml .Values.volumes | indent 6 }}
       containers:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
@@ -35,6 +33,8 @@ spec:
           volumeMounts:
             - name: myvolume
               mountPath: "/home/{{default "default" .Release.Namespace}}"
+          volumeMounts:
+{{ toYaml .Values.volumeMounts | indent 12 }}
           resources:
 {{ toYaml .Values.resources | indent 12 }}
     {{- with .Values.nodeSelector }}
