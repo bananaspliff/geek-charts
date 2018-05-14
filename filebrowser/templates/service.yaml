@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ template "filebrowser.fullname" . }}
+  labels:
+    app: {{ template "filebrowser.name" . }}
+    chart: {{ template "filebrowser.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app: {{ template "filebrowser.name" . }}
+    release: {{ .Release.Name }}
