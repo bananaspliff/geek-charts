@@ -47,10 +47,10 @@ volumeMounts:
 
 resources:
   requests:
-    memory: 128m
+    memory: 128Mi
     cpu: 0.1
   limits:
-    memory: 256m
+    memory: 256Mi
     cpu: 0.5
 
 nodeSelector: {}
