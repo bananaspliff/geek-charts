@@ -8,7 +8,7 @@ entries:
     digest: 16f819dca68709fbcb1c437a687878b25c365c5df4051a1b96e4258ddf7fadf7
     name: emby
     urls:
-    - emby-0.1.0.tgz
+    - https://bananaspliff.github.io/geek-charts/emby-0.1.0.tgz
     version: 0.1.0
   jackett:
   - apiVersion: v1
@@ -18,7 +18,7 @@ entries:
     digest: 48a88160740aeba984ca98dae466f79247cb14f15df9afbd324562d5a6b17555
     name: jackett
     urls:
-    - https://bananaspliff.github.io/helm-charts/jackett-0.1.0.tgz
+    - https://bananaspliff.github.io/geek-charts/jackett-0.1.0.tgz
     version: 0.1.0
   myvolume:
   - apiVersion: v1
@@ -27,7 +27,7 @@ entries:
     digest: 5e1993894f675f4a600a57081fe233eabe4cf6694b8e5f00527a66843029e487
     name: myvolume
     urls:
-    - https://bananaspliff.github.io/helm-charts/myvolume-0.1.0.tgz
+    - https://bananaspliff.github.io/geek-charts/myvolume-0.1.0.tgz
     version: 0.1.0
   radarr:
   - apiVersion: v1
@@ -37,17 +37,17 @@ entries:
     digest: adbe78fbb54ec19ee95f69b1038df1e5d9a6b501254753cdb71f216550ce5752
     name: radarr
     urls:
-    - https://bananaspliff.github.io/helm-charts/radarr-0.1.0.tgz
+    - https://bananaspliff.github.io/geek-charts/radarr-0.1.0.tgz
     version: 0.1.0
   sftp:
   - apiVersion: v1
     created: 2018-05-13T16:51:57.464159724+02:00
     description: A SFTP HELM chart for Kubernetes
     digest: f2e5af08e411c2db16509c940e0d6f45af548a1dd0d62a1bcf4831291673bc13
-    icon: https://bananaspliff.github.io/helm-charts/sftp/logo/sftp.png
+    icon: https://bananaspliff.github.io/geek-charts/sftp/logo/sftp.png
     name: sftp
     urls:
-    - https://bananaspliff.github.io/helm-charts/sftp-0.1.0.tgz
+    - https://bananaspliff.github.io/geek-charts/sftp-0.1.0.tgz
     version: 0.1.0
   sonarr:
   - apiVersion: v1
@@ -57,6 +57,6 @@ entries:
     digest: ea82e9175d56a5d6878426ffc122e3bb588aa7b3d0ead8aa2f8fdd15877f40ff
     name: sonarr
     urls:
-    - https://bananaspliff.github.io/helm-charts/sonarr-0.1.0.tgz
+    - https://bananaspliff.github.io/geek-charts/sonarr-0.1.0.tgz
     version: 0.1.0
 generated: 2018-05-13T16:51:57.462388595+02:00
