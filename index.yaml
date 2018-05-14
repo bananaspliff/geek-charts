@@ -3,28 +3,38 @@ entries:
   emby:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-05-13T16:51:57.462742151+02:00
+    created: 2018-05-14T19:43:09.945730277+02:00
     description: Emby Server (Media Browser)
-    digest: 16f819dca68709fbcb1c437a687878b25c365c5df4051a1b96e4258ddf7fadf7
+    digest: 1a04feb005561e6faada1c52f7c19ea865266de515a77e4e9b746a8e9f5580a2
     name: emby
     urls:
     - https://bananaspliff.github.io/geek-charts/emby-0.1.0.tgz
     version: 0.1.0
+  filebrowser:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2018-05-14T19:43:09.945957923+02:00
+    description: Simple Web File Manager
+    digest: e7cb3a8afac40a9a8a33b3aea95c51f930b03afbb06c59a60639008d0be860cb
+    name: filebrowser
+    urls:
+    - https://bananaspliff.github.io/geek-charts/filebrowser-0.1.0.tgz
+    version: 0.1.0
   jackett:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-05-13T16:51:57.46298784+02:00
+    created: 2018-05-14T19:43:09.946170006+02:00
     description: Jackett - shut:p
-    digest: 48a88160740aeba984ca98dae466f79247cb14f15df9afbd324562d5a6b17555
+    digest: 0464cd143a68bc7d302080e0eb66038ee94586b91b55eed8b285d70050cad74c
     name: jackett
     urls:
     - https://bananaspliff.github.io/geek-charts/jackett-0.1.0.tgz
     version: 0.1.0
   myvolume:
   - apiVersion: v1
-    created: 2018-05-13T16:51:57.463140991+02:00
+    created: 2018-05-14T19:43:09.946322088+02:00
     description: PVC ReadWriteMany for current Namespace
-    digest: 5e1993894f675f4a600a57081fe233eabe4cf6694b8e5f00527a66843029e487
+    digest: 47e747c8c8570b529364512f0f8a244c233a70b179d43d152d6fbd86be9a1c42
     name: myvolume
     urls:
     - https://bananaspliff.github.io/geek-charts/myvolume-0.1.0.tgz
@@ -32,19 +42,19 @@ entries:
   radarr:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-05-13T16:51:57.463355675+02:00
+    created: 2018-05-14T19:43:09.946532903+02:00
     description: Radarr - Automatic downloader for movies :)
-    digest: adbe78fbb54ec19ee95f69b1038df1e5d9a6b501254753cdb71f216550ce5752
+    digest: 0d5e00d7ec2dc0a9efc8c914abe57cbda2a120e9687bf04f87711fee3d8dcc43
     name: radarr
     urls:
     - https://bananaspliff.github.io/geek-charts/radarr-0.1.0.tgz
     version: 0.1.0
   sftp:
   - apiVersion: v1
-    created: 2018-05-13T16:51:57.464159724+02:00
+    created: 2018-05-14T19:43:09.947310522+02:00
     description: A SFTP HELM chart for Kubernetes
-    digest: f2e5af08e411c2db16509c940e0d6f45af548a1dd0d62a1bcf4831291673bc13
-    icon: https://bananaspliff.github.io/geek-charts/sftp/logo/sftp.png
+    digest: a1ab8af652eeb4c6fe8627a0d4c1b5426cf445a81b144380fcb28836f7f5a757
+    icon: https://bananaspliff.github.io/helm-charts/sftp/logo/sftp.png
     name: sftp
     urls:
     - https://bananaspliff.github.io/geek-charts/sftp-0.1.0.tgz
@@ -52,11 +62,11 @@ entries:
   sonarr:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-05-13T16:51:57.464450583+02:00
-    description: Sonarr - Automatic downloader for movies :)
-    digest: ea82e9175d56a5d6878426ffc122e3bb588aa7b3d0ead8aa2f8fdd15877f40ff
+    created: 2018-05-14T19:43:09.947520175+02:00
+    description: Sonarr - Automatic downloader for TV shows ^^
+    digest: b78b702485910267dc7b28d2889a8f2f52437a9873f4a2b1116434513034a86d
     name: sonarr
     urls:
     - https://bananaspliff.github.io/geek-charts/sonarr-0.1.0.tgz
     version: 0.1.0
-generated: 2018-05-13T16:51:57.462388595+02:00
+generated: 2018-05-14T19:43:09.945391793+02:00
