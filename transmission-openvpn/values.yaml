@@ -1,0 +1,88 @@
+# optimized for airvpn
+#   command to add your openvpn configuration file :
+#    - kubectl create configmap openvpn-common-config --from-file openvpn.conf --namespace usr-jean-saisrien
+#
+
+replicaCount: 1
+
+image:
+  repository: haugene/transmission-openvpn
+  tag: latest
+  pullPolicy: IfNotPresent
+
+dnsPolicy: "None"
+
+dnsConfig:
+  nameservers:
+    - 8.8.8.8
+    - 8.8.4.4
+
+env:
+  - name: OPENVPN_PROVIDER
+    value: "CUSTOM"
+  - name: OPENVPN_CONFIG
+    value: "Netherlands"
+  - name: OPENVPN_USERNAME
+    value: "foo"
+  - name: OPENVPN_PASSWORD
+    value: "foo"
+  - name: TRANSMISSION_RPC_USERNAME
+    value: "foo"
+  - name: TRANSMISSION_RPC_PASSWORD
+    value: "foo"
+  - name: TRANSMISSION_PEER_PORT
+    value: "47444"
+  - name: TRANSMISSION_RPC_AUTHENTICATION_REQUIRED
+    value: "true"
+
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: false
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    kubernetes.io/tls-acme: "true"
+  path: /
+  hosts:
+    - transmission.bananaspliff.org
+  tls:
+   - secretName: transmission-bananaspliff-org
+     hosts:
+       - transmission.bananaspliff.org
+
+volumes:
+  - name: myvolume
+    persistentVolumeClaim:
+      claimName: myvolume
+  - name: config
+    configMap:
+      name: "openvpn-common-config"
+  - name: dev-tun
+    hostPath:
+      path: "/dev/net/tun"
+
+volumeMounts:
+    - name: myvolume
+      mountPath: "/data"
+      subPath: "configs/transmission-data"
+    - name: config
+      mountPath: "/etc/openvpn/custom/default.ovpn"
+      subPath: "openvpn.conf"
+    - name: dev-tun
+      mountPath: "/dev/net/tun"
+
+securityContext:
+  capabilities:
+    add:
+      - NET_ADMIN
+
+resources: {}
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}

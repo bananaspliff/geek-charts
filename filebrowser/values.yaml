@@ -31,10 +31,10 @@ volumes:
 volumeMounts:
   - name: myvolume
     mountPath: "/etc/config.json"
-    subPath: "configs/filebrowser"
+    subPath: "configs/filebrowser/config.json"
   - name: myvolume
     mountPath: "/etc/database.db"
-    subPath: "datas/filebrowser/database.db"
+    subPath: "configs/filebrowser/database.db"
   - name: myvolume
     mountPath: "/srv"
 

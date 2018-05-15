@@ -5,8 +5,8 @@ NAMESPACE=$2
 PACKAGE=$3
 
 echo name : ${NAME}
-echo package : ${PACKAGE}
 echo namespace : ${NAMESPACE}
+echo package : ${PACKAGE}
 
 HOSTNAME=${PACKAGE}.${NAMESPACE}.bananaspliff.org
 

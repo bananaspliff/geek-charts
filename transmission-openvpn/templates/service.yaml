@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ template "transmission-openvpn.fullname" . }}
+  labels:
+    app: {{ template "transmission-openvpn.name" . }}
+    chart: {{ template "transmission-openvpn.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: 9091
+      protocol: TCP
+      name: http
+  selector:
+    app: {{ template "transmission-openvpn.name" . }}
+    release: {{ .Release.Name }}
