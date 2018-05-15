@@ -34,7 +34,10 @@ env:
     value: "47444"
   - name: TRANSMISSION_RPC_AUTHENTICATION_REQUIRED
     value: "true"
-
+  - name: PUID
+    value: "1001"
+  - name: PGID
+    value: "100"
 
 service:
   type: ClusterIP
