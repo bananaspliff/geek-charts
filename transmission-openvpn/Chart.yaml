@@ -3,4 +3,4 @@ appVersion: "1.0"
 description: Transmission torrent client with WebUI while connecting to OpenVPN.
 name: transmission-openvpn
 version: 0.1.0
-icon: https://bananaspliff.github.io/helm-charts/transmission-openvpn/logo/transmission.png
+icon: https://bananaspliff.github.io/geek-charts/transmission-openvpn/logo/transmission.png

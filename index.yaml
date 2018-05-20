@@ -3,9 +3,10 @@ entries:
   emby:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-05-15T22:37:59.899311045+02:00
+    created: 2018-05-20T17:47:45.888898534+02:00
     description: Emby Server (Media Browser)
-    digest: 0fc5bd4c7e9e6116e4d4b57f3884be9942bb8e71e3da1f893f12af25a21f538c
+    digest: ecc05914a9fb36d211828871d1b274300797a65b8db6d37151c436ec8a65591b
+    icon: https://bananaspliff.github.io/geek-charts/emby/logo/emby.jpg
     name: emby
     urls:
     - https://bananaspliff.github.io/geek-charts/emby-0.1.0.tgz
@@ -13,9 +14,10 @@ entries:
   filebrowser:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-05-15T22:37:59.899535577+02:00
+    created: 2018-05-20T17:47:45.889162702+02:00
     description: Simple Web File Manager
-    digest: 9a01a5c7f9f98aba9e7964bb9d15a7a3a9180cf3c929640ee8a5761ed1622022
+    digest: facea0e98f4589409e646589785e5562e2d65574350c78bc3d162d0b83a0df26
+    icon: https://bananaspliff.github.io/geek-charts/filebrowser/logo/filebrowser.svg
     name: filebrowser
     urls:
     - https://bananaspliff.github.io/geek-charts/filebrowser-0.1.0.tgz
@@ -23,16 +25,17 @@ entries:
   jackett:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-05-15T22:37:59.899747029+02:00
+    created: 2018-05-20T17:47:45.890020252+02:00
     description: Jackett - shut:p
-    digest: 57463ac50acd9bd0e041871ef0dc4a3df5796161de6963d4d8c3a9d933c326dc
+    digest: 1e081aa9927881e09e836e196471f18eb850174ae63a5216f7fc8303323089b5
+    icon: https://bananaspliff.github.io/geek-charts/jackett/logo/jackett.png
     name: jackett
     urls:
     - https://bananaspliff.github.io/geek-charts/jackett-0.1.0.tgz
     version: 0.1.0
   myvolume:
   - apiVersion: v1
-    created: 2018-05-15T22:37:59.899910918+02:00
+    created: 2018-05-20T17:47:45.890209742+02:00
     description: PVC ReadWriteMany for current Namespace
     digest: 47e747c8c8570b529364512f0f8a244c233a70b179d43d152d6fbd86be9a1c42
     name: myvolume
@@ -42,19 +45,20 @@ entries:
   radarr:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-05-15T22:37:59.900122184+02:00
+    created: 2018-05-20T17:47:45.891018128+02:00
     description: Radarr - Automatic downloader for movies :)
-    digest: b81ac64f7478e5d748784d23f40f0dd82ae8ba5be21f779d5fd13fe7a7ef9cd2
+    digest: 2265b0392ab033be10a19f8d75f2159060d73d07b29ed77ff649577f433b427d
+    icon: https://bananaspliff.github.io/geek-charts/radarr/logo/radarr.png
     name: radarr
     urls:
     - https://bananaspliff.github.io/geek-charts/radarr-0.1.0.tgz
     version: 0.1.0
   sftp:
   - apiVersion: v1
-    created: 2018-05-15T22:37:59.900933433+02:00
+    created: 2018-05-20T17:47:45.891809761+02:00
     description: A SFTP HELM chart for Kubernetes
-    digest: de13a46b27a38f82d8579fdb62ec6a2f66a2103a04efd8d976de5099783a7281
-    icon: https://bananaspliff.github.io/helm-charts/sftp/logo/sftp.png
+    digest: 58196e86bb57a1432d55705385a0ccf5562c8e0876d23b7034876f533bb4d153
+    icon: https://bananaspliff.github.io/geek-charts/sftp/logo/sftp.png
     name: sftp
     urls:
     - https://bananaspliff.github.io/geek-charts/sftp-0.1.0.tgz
@@ -62,9 +66,10 @@ entries:
   sonarr:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-05-15T22:37:59.901204981+02:00
+    created: 2018-05-20T17:47:45.892620657+02:00
     description: Sonarr - Automatic downloader for TV shows ^^
-    digest: d1664dbded3ca5883155f4be13ca668bdb0e39734d6db6e41bf0dec5fbabf498
+    digest: c4d0efa8943f5f63413cd555d272abf4da2e8df5b69ff2329abbd94f09704788
+    icon: https://bananaspliff.github.io/geek-charts/sonarr/logo/sonarr.png
     name: sonarr
     urls:
     - https://bananaspliff.github.io/geek-charts/sonarr-0.1.0.tgz
@@ -72,11 +77,12 @@ entries:
   transmission-openvpn:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-05-15T22:37:59.901443459+02:00
+    created: 2018-05-20T17:47:45.89372468+02:00
     description: Transmission torrent client with WebUI while connecting to OpenVPN.
-    digest: 275a7b2b0364f546a1228aab71478140ff552f5ee30cb5aa8c6860b9288be644
+    digest: 29ed0411392322b691b7815ae519fd3ef05f96dfa8ec3af1adf04e8e69a64e2a
+    icon: https://bananaspliff.github.io/geek-charts/transmission-openvpn/logo/transmission.png
     name: transmission-openvpn
     urls:
     - https://bananaspliff.github.io/geek-charts/transmission-openvpn-0.1.0.tgz
     version: 0.1.0
-generated: 2018-05-15T22:37:59.898961743+02:00
+generated: 2018-05-20T17:47:45.888448945+02:00

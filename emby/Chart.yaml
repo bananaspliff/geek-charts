@@ -3,4 +3,4 @@ appVersion: "1.0"
 description: Emby Server (Media Browser)
 name: emby
 version: 0.1.0
-icon: https://bananaspliff.github.io/helm-charts/emby/logo/emby.jpg
+icon: https://bananaspliff.github.io/geek-charts/emby/logo/emby.jpg
