@@ -34,6 +34,8 @@ env:
     value: "47444"
   - name: TRANSMISSION_RPC_AUTHENTICATION_REQUIRED
     value: "true"
+  - name: TRANSMISSION_DOWNLOAD_DIR
+    value: "/downloads/transmission"
   - name: PUID
     value: "1001"
   - name: PGID
@@ -71,6 +73,9 @@ volumeMounts:
     - name: myvolume
       mountPath: "/data"
       subPath: "configs/transmission-data"
+    - name: myvolume
+      mountPath: "/downloads/transmission"
+      subPath: "downloads/transmission"
     - name: config
       mountPath: "/etc/openvpn/custom/default.ovpn"
       subPath: "openvpn.conf"

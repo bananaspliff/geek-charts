@@ -39,8 +39,8 @@ volumeMounts:
     mountPath: "/config"
     subPath: "configs/radarr"
   - name: myvolume
-    mountPath: "/downloads"
-    subPath: "downloads/radarr"
+    mountPath: "/downloads/transmission"
+    subPath: "downloads/transmission"
   - name: myvolume
     mountPath: "/movies"
     subPath: "medias/movies"

@@ -34,11 +34,11 @@ spec:
           livenessProbe:
             httpGet:
               path: /
-              port: http
+              port: 8989
           readinessProbe:
             httpGet:
               path: /
-              port: http
+              port: 8989
           volumeMounts:
 {{ toYaml .Values.volumeMounts | indent 12 }}
           resources:

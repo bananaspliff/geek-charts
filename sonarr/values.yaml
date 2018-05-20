@@ -39,8 +39,8 @@ volumeMounts:
     mountPath: "/config"
     subPath: "configs/sonarr"
   - name: myvolume
-    mountPath: "/downloads"
-    subPath: "downloads/sonarr"
+    mountPath: "/downloads/transmission"
+    subPath: "downloads/transmission"
   - name: myvolume
     mountPath: "/tv"
     subPath: "medias/tv"
