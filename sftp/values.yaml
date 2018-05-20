@@ -3,7 +3,7 @@ image:
   repository: atmoz/sftp
   tag: latest
   pullPolicy: IfNotPresent
-  args: "foo:foo:1001"
+  args: "foo:foo:1000"
 
 service:
   type: NodePort

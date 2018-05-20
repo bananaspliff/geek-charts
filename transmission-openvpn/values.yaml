@@ -37,9 +37,9 @@ env:
   - name: TRANSMISSION_DOWNLOAD_DIR
     value: "/downloads/transmission"
   - name: PUID
-    value: "1001"
+    value: "1000"
   - name: PGID
-    value: "100"
+    value: "1000"
 
 service:
   type: ClusterIP

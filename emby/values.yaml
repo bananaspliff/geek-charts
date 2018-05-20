@@ -8,9 +8,9 @@ image:
 
 env:
   - name: UID
-    value: "1001"
+    value: "1000"
   - name: GID
-    value: "100"
+    value: "1000"
 
 service:
   type: ClusterIP

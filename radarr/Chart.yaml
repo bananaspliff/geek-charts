@@ -3,3 +3,4 @@ appVersion: "1.0"
 description: Radarr - Automatic downloader for movies :)
 name: radarr
 version: 0.1.0
+icon: https://bananaspliff.github.io/helm-charts/radarr/logo/radarr.png
