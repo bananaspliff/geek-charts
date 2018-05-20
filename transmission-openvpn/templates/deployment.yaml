@@ -34,6 +34,16 @@ spec:
             - name: http
               containerPort: 9091
               protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 9091
+            timeoutSeconds: 60
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 9091
+            timeoutSeconds: 60
           securityContext:
 {{ toYaml .Values.securityContext | indent 12 }}
           volumeMounts:

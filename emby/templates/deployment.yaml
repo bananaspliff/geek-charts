@@ -37,11 +37,13 @@ spec:
           livenessProbe:
             httpGet:
               path: /
-              port: http
+              port: 8096
+            timeoutSeconds: 30
           readinessProbe:
             httpGet:
               path: /
-              port: http
+              port: 8096
+            timeoutSeconds: 30
           volumeMounts:
 {{ toYaml .Values.volumeMounts | indent 12 }}
           resources:

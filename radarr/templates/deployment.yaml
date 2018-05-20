@@ -35,10 +35,12 @@ spec:
             httpGet:
               path: /
               port: 7878
+            timeoutSeconds: 60
           readinessProbe:
             httpGet:
               path: /
               port: 7878
+            timeoutSeconds: 60
           volumeMounts:
 {{ toYaml .Values.volumeMounts | indent 12 }}
           resources:
