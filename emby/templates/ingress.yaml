@@ -1,5 +1,4 @@
 {{- if .Values.ingress.enabled }}
-{{- fullname := include "emby.fullname" . -}}
 {{- range .Values.ingress.hosts }}
 apiVersion: extensions/v1beta1
 kind: Ingress
