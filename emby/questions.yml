@@ -38,16 +38,16 @@ questions:
     type: hostname
     required: true
     label: Hostname
-  - variable: ingress.tls
-    default: "false"
-    description: "Enable TLS"
-    type: boolean
-    required: true
-    label: TLS
+- variable: ingress.tls
+  default: "false"
+  description: "Enable TLS"
+  type: boolean
+  required: true
+  label: TLS
+  show_if: "ingress.enabled=true"
+  subquestions:
   - variable: ingress.tlsSecret
-    default: ""
     description: "certificate name"
     type: string
     required: true
     label: Certificate name
-    show_if: "ingress.tls=true"
