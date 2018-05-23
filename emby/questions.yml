@@ -1,0 +1,53 @@
+categories:
+- Media Center
+questions:
+- variable: defaultImage
+  default: "true"
+  description: "Use latest Docker images"
+  label: Use latest Images
+  type: boolean
+  show_subquestion_if: false
+  group: "Container Images"
+  subquestions:
+  - variable: image.repository
+    default: "emby/embyserver"
+    description: "Emby image name"
+    type: string
+    label: Emby Image Name
+  - variable: image.tag
+    default: "latest"
+    description: "Emby image tag"
+    type: string
+    label: Emby Image Tag
+  - variable: image.pullPolicy
+    default: "IfNotPresent"
+    description: "Emby image pullPolicy"
+    type: string
+    label: Emby Image pullPolicy
+- variable: ingress.enabled
+  default: "true"
+  description: "Expose app using Layer 7 Load Balancer - ingress"
+  type: boolean
+  label: Expose app using Layer 7 Load Balancer
+  show_subquestion_if: true
+  group: "Services and Load Balancing"
+  subquestions:
+  - variable: ingress.hosts[0].name
+    default: "xip.io"
+    description: "Hostname to your Emby installation"
+    type: hostname
+    required: true
+    label: Hostname
+  - variable: ingress.tls
+    default: "false"
+    description: "Enable TLS"
+    type: boolean
+    required: true
+    label: TLS
+  - variable: ingress.tlsSecret
+    default: ""
+    description: "certificate name"
+    type: string
+    required: true
+    label: Certificate name
+    show_if: "ingress.tls=true"
