@@ -42,9 +42,9 @@ questions:
   default: "false"
   description: "Enable TLS"
   type: boolean
-  required: true
   label: TLS
   show_if: "ingress.enabled=true"
+  show_subquestion_if: true
   subquestions:
   - variable: ingress.tlsSecret
     description: "certificate name"
