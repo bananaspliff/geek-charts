@@ -2,7 +2,7 @@
 replicaCount: 1
 
 image:
-  repository: hacdias/filebrowser
+  repository: filebrowser/filebrowser
   tag: latest
   pullPolicy: IfNotPresent
 

@@ -1,5 +1,5 @@
 
-storageClass: bananaspliff-nfs
+storageClass:
 
 volumeName: myvolume
 
