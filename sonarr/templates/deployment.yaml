@@ -31,16 +31,6 @@ spec:
             - name: http
               containerPort: 8989
               protocol: TCP
-          livenessProbe:
-            httpGet:
-              path: /
-              port: 8989
-            timeoutSeconds: 60
-          readinessProbe:
-            httpGet:
-              path: /
-              port: 8989
-            timeoutSeconds: 60
           volumeMounts:
 {{ toYaml .Values.volumeMounts | indent 12 }}
           resources:

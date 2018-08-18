@@ -31,16 +31,6 @@ spec:
             - name: http
               containerPort: 9117
               protocol: TCP
-          livenessProbe:
-            httpGet:
-              path: /
-              port: 9117
-            timeoutSeconds: 60
-          readinessProbe:
-            httpGet:
-              path: /
-              port: 9117
-            timeoutSeconds: 60
           volumeMounts:
 {{ toYaml .Values.volumeMounts | indent 12 }}
           resources:
