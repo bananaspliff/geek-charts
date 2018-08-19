@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ template "ombi.fullname" . }}
+  labels:
+    app: {{ template "ombi.name" . }}
+    chart: {{ template "ombi.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: 3579
+      protocol: TCP
+      name: http
+  selector:
+    app: {{ template "ombi.name" . }}
+    release: {{ .Release.Name }}

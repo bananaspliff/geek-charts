@@ -1,0 +1,47 @@
+
+replicaCount: 1
+
+image:
+  repository: linuxserver/ombi
+  tag: latest
+  pullPolicy: IfNotPresent
+
+env:
+  - name: PUID
+    value: "1000"
+  - name: PGID
+    value: "1000"
+  - TZ: "Europe/Paris"
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: false
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    kubernetes.io/tls-acme: "true"
+  path: /
+  hosts:
+    - ombi.bananaspliff.org
+  tls:
+   - secretName: ombi-bananaspliff-org
+     hosts:
+       - ombi.bananaspliff.org
+
+volumes:
+  - name: myvolume
+    persistentVolumeClaim:
+      claimName: myvolume
+
+volumeMounts:
+  - name: myvolume
+    mountPath: "/config"
+    subPath: "configs/ombi"
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
