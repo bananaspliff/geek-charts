@@ -11,7 +11,8 @@ env:
     value: "1000"
   - name: PGID
     value: "1000"
-  - TZ: "Europe/Paris"
+  - name: "TZ"
+    value: "Europe/Paris"
 
 service:
   type: ClusterIP
