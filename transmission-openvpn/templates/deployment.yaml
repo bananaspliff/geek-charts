@@ -24,6 +24,8 @@ spec:
       dnsPolicy: {{ .Values.dnsPolicy }}
       dnsConfig:
 {{ toYaml .Values.dnsConfig | indent 8 }}
+      securityContext:
+{{ toYaml .Values.podSecurityContext | indent 8 }}
       containers:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
