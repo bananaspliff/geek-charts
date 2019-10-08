@@ -82,10 +82,24 @@ volumeMounts:
     - name: dev-tun
       mountPath: "/dev/net/tun"
 
+# Security context for container
 securityContext:
   capabilities:
     add:
       - NET_ADMIN
+
+# Security context for pod
+# Can be used to allow ipv6 for openvpn, because
+# some VPN providers push an ipv6 route with will fail without
+# ipv6 support, see https://github.com/haugene/docker-transmission-openvpn/issues/789
+# Note that your kubelet needs to allow changing this sysctl setting, see
+# https://kubernetes.io/docs/tasks/administer-cluster/sysctl-cluster/#enabling-unsafe-sysctls
+#
+# - podSecurityContext:
+#     sysctls:
+#       - name: net.ipv6.conf.all.disable_ipv6
+#         value: "0"
+podSecurityContext: {}
 
 resources: {}
 
