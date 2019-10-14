@@ -1,7 +1,4 @@
-# optimized for airvpn
-#   command to add your openvpn configuration file :
-#    - kubectl create configmap openvpn-common-config --from-file openvpn.conf --namespace usr-jean-saisrien
-#
+# Optimized for airvpn.
 
 replicaCount: 1
 
@@ -58,13 +55,31 @@ ingress:
      hosts:
        - transmission.bananaspliff.org
 
+# You have 2 options to deploy your custom openvpn config:
+#
+# 1. Create a kubernetes secret manually from an openvpn config file like this:
+#
+#    kubectl create configmap openvpn-common-config --from-file openvpn.conf --namespace usr-jean-saisrien
+#
+# 2. Use the `customOpenvpnConfig` config option, which will be used
+# to store a kubernetes secret on your cluster automatically:
+#
+# customOpenvpnConfig:
+#   secretName: privatevpn-amsterdam1-udp-1194
+#   fileName: privatevpn-amsterdam1-udp-1194.ovpn
+#   config: |
+#     remote nl-ams.pvdata.host 1194 udp
+#     nobind
+#     dev tun
+#     …
+
 volumes:
   - name: myvolume
     persistentVolumeClaim:
       claimName: myvolume
   - name: config
-    configMap:
-      name: "openvpn-common-config"
+    secret:
+      secretName: "openvpn-common-config"
   - name: dev-tun
     hostPath:
       path: "/dev/net/tun"
