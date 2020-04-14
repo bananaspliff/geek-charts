@@ -1,6 +1,7 @@
 # Optimized for airvpn.
 
 replicaCount: 1
+strategyType: Recreate
 
 image:
   repository: haugene/transmission-openvpn

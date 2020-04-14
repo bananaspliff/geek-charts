@@ -9,6 +9,8 @@ metadata:
     heritage: {{ .Release.Service }}
 spec:
   replicas: {{ .Values.replicaCount }}
+  strategy:
+    type: {{ .Values.strategyType }}
   selector:
     matchLabels:
       app: {{ template "transmission-openvpn.name" . }}
