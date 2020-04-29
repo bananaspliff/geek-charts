@@ -39,15 +39,9 @@ spec:
               containerPort: 9091
               protocol: TCP
           livenessProbe:
-            initialDelaySeconds: 15
-            periodSeconds: 5
-            tcpSocket:
-              port: http
+{{ toYaml .Values.livenessProbe | indent 12 }}
           readinessProbe:
-            initialDelaySeconds: 15
-            periodSeconds: 5
-            tcpSocket:
-              port: http
+{{ toYaml .Values.readinessProbe | indent 12 }}
           securityContext:
 {{ toYaml .Values.securityContext | indent 12 }}
           volumeMounts:
