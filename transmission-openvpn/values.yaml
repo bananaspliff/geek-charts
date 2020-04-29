@@ -105,7 +105,7 @@ livenessProbe:
     command:
     - sh
     - -c
-    - "/usr/bin/transmission-remote -n '$USER':'$PASS' -st"
+    - /usr/bin/transmission-remote -n "$USER:$PASS" -st
 readinessProbe:
   initialDelaySeconds: 15
   periodSeconds: 5
@@ -113,7 +113,7 @@ readinessProbe:
     command:
     - sh
     - -c
-    - "/usr/bin/transmission-remote -n '$USER':'$PASS' -st"
+    - /usr/bin/transmission-remote -n "$USER:$PASS" -st
 # Security context for container
 securityContext:
   capabilities:
