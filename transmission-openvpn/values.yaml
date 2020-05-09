@@ -123,3 +123,20 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+livenessProbe:
+  initialDelaySeconds: 45
+  periodSeconds: 10
+  exec:
+    command:
+      - sh
+      - -c
+      - /etc/scripts/healthcheck.sh
+readinessProbe:
+  initialDelaySeconds: 15
+  periodSeconds: 10
+  exec:
+    command:
+      - sh
+      - -c
+      - /etc/scripts/healthcheck.sh

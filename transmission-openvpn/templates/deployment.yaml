@@ -36,6 +36,10 @@ spec:
             - name: http
               containerPort: 9091
               protocol: TCP
+          livenessProbe:
+{{ toYaml .Values.livenessProbe | indent 12 }}
+          readinessProbe:
+{{ toYaml .Values.readinessProbe | indent 12 }}
           securityContext:
 {{ toYaml .Values.securityContext | indent 12 }}
           volumeMounts:
