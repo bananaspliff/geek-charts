@@ -12,6 +12,8 @@ env:
   - name: PGID
     value: "1000"
 
+podAnnotations: {}
+
 service:
   type: ClusterIP
   port: 80

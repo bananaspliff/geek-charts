@@ -1,6 +1,7 @@
 # Optimized for airvpn.
 
 replicaCount: 1
+strategyType: Recreate
 
 image:
   repository: haugene/transmission-openvpn
@@ -97,6 +98,22 @@ volumeMounts:
     - name: dev-tun
       mountPath: "/dev/net/tun"
 
+livenessProbe:
+  initialDelaySeconds: 15
+  periodSeconds: 5
+  exec:
+    command:
+    - sh
+    - -c
+    - /usr/bin/transmission-remote -n "$USER:$PASS" -st
+readinessProbe:
+  initialDelaySeconds: 15
+  periodSeconds: 5
+  exec:
+    command:
+    - sh
+    - -c
+    - /usr/bin/transmission-remote -n "$USER:$PASS" -st
 # Security context for container
 securityContext:
   capabilities:
