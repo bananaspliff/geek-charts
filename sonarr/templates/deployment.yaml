@@ -13,6 +13,8 @@ spec:
     matchLabels:
       app: {{ template "sonarr.name" . }}
       release: {{ .Release.Name }}
+  strategy:
+    type: Recreate
   template:
     metadata:
       {{- if .Values.podAnnotations }}
@@ -25,8 +27,6 @@ spec:
         app: {{ template "sonarr.name" . }}
         release: {{ .Release.Name }}
     spec:
-      strategy:
-        type: Recreate
       volumes:
 {{ toYaml .Values.volumes | indent 6 }}
       containers:
