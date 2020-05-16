@@ -25,6 +25,8 @@ spec:
         app: {{ template "sonarr.name" . }}
         release: {{ .Release.Name }}
     spec:
+      strategy:
+        type: Recreate
       volumes:
 {{ toYaml .Values.volumes | indent 6 }}
       containers:
